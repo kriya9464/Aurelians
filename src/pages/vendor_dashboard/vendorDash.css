@@ -1,0 +1,12 @@
+.vendordash{
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: -500px;
+    margin-left:500px ;
+    margin-right: 700px;
+}
+
+.vendordash [input]{
+    width:100px;
+}

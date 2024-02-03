@@ -1,0 +1,11 @@
+.nav_bar{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: rgb(115,79,0);
+    background: linear-gradient(90deg, rgba(115,79,0,1) 0%, rgba(246,190,48,1) 100%);
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+}

@@ -1,0 +1,65 @@
+#ServicePage{
+    margin: 10px 30px;
+}
+.serviceHeader span{
+    margin: 0;
+    text-align: left;
+}
+.Service-Info{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 300px;
+
+}
+.about span{
+    display: inline;
+    font-size: 14px;
+}
+/* .about .timing{
+    padding-right: 3rem;
+} */
+.about .status{
+    padding-left: 9rem;
+    margin-right: 0;
+    text-align: right;
+}
+.about p{
+    padding: 5px;
+    font-size: 16px;
+}
+.about .rating{
+    display: block;
+    text-align: left;
+}
+.about .contact{
+    display: block;
+    text-align: left;
+}
+.about button{
+    margin: 5px;
+    background-color: rgb(39, 220, 39);
+}
+.directions{
+   border: 2px solid black;
+}
+
+.Service-section{
+    padding-top: 10px;
+    text-align: center;
+}
+.Service-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.serviceImage img{
+    width: 300px;
+    border-radius: 20px;
+    margin: 10px;
+}
+.Service-card span{
+    font-size: 24px;
+    font-weight: 500;
+    background-color: rgba(222, 184, 135, 0.614);
+    color: rgb(15, 15, 15);
+
+}

@@ -1,0 +1,164 @@
+.homepage{
+    overflow: hidden;
+    max-width: 100vw;
+    
+}
+#navbar{
+    display: flex;
+    /* justify-content: right; */
+    background: rgb(115,79,0);
+background: linear-gradient(90deg, rgba(115,79,0,1) 0%, rgba(246,190,48,1) 100%);
+justify-content: space-between;
+justify-content: center;
+
+}
+.nav{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin: 0 ;
+    padding: 5px;
+    justify-content: space-between;
+    font-size: 1.2rem;
+
+}
+.home{
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.homeImage img{
+    width: 100%;
+    max-height: 100vh;
+}
+.homeContent{
+    /* margin: 0 auto;
+    width: 100%;
+    justify-self: center; */
+    padding: 20px 10px;
+    justify-content: center;
+    
+}
+.homeContent h1{
+    color: rgb(190, 121, 16);
+}
+
+.mainText{ 
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+  }
+  #homepage h1{
+    text-align:center;
+    text-transform: uppercase;
+    color: #155102; 
+    font-size: 4rem;
+  }
+  
+  .roller{
+    height: 4.125rem;
+    line-height: 4rem;
+    position: relative;
+    overflow: hidden; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: #1D3557;
+  }
+  
+  
+  #spare-time{
+    font-size: 1rem;
+    font-style: italic;
+    letter-spacing: 0.5rem;
+    margin-top: 0;
+    color: #A8DADC;
+    
+  }
+  
+  .roller #rolltext {
+    position: absolute;
+    top: 0;
+    animation: slide 5s infinite;  
+  }
+  
+  @keyframes slide {
+    0%{
+      top:0;
+    }
+    25%{
+      top: -4rem;    
+    }
+    50%{
+      top: -8rem;
+    }
+    72.5%{
+      top: -12.25rem;
+    }
+  }
+  
+  @media screen and (max-width: 600px){
+    h1{
+    text-align:center;
+    text-transform: uppercase;
+    color: #F1FAEE; 
+    font-size: 2.125rem;
+  }
+    
+    .roller{
+    height: 2.6rem; 
+    line-height: 2.125rem;  
+    }
+    
+    #spare-time {
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+    }
+    
+    .roller #rolltext {  
+    animation: slide-mob 5s infinite;  
+  }
+    
+    @keyframes slide-mob {
+    0%{
+      top:0;
+    }
+    25%{
+      top: -2.125rem;    
+    }
+    50%{
+      top: -4.25rem;
+    }
+    72.5%{
+      top: -6.375rem;
+    }
+  }
+  }
+.exploreOptions{
+    
+    margin:5px auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.exploreCard{
+    margin-top: 50px;
+    height: 100px;
+    width: 250px;
+    background-color: rgba(181, 133, 20, 0.466);
+    border: 2px solid black;
+    border-radius: 20px;
+    justify-items: center;
+    cursor: pointer;
+
+}
+.exploreCard h2,span{
+    display: block;
+    margin: 0 auto;
+    padding: 2px;
+    text-align: center;
+
+}
