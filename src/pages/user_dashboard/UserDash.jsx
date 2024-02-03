@@ -16,7 +16,7 @@ const UserDash = () => {
   };
   return (
     <div>
-      <div className="navbar">
+      {/* <div className="navbar">
         <div className="logo">
             <img src="" alt="Aurelians" />
         </div>
@@ -25,7 +25,7 @@ const UserDash = () => {
             <input type="text" placeholder='Search'/>
         </div>
         <div className="person-icon">Profile</div>
-      </div>
+      </div> */}
 
       <div className="sidebar">
         <div className="quickLink list">

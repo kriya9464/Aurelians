@@ -39,10 +39,14 @@
     margin: 5px;
     background-color: rgb(39, 220, 39);
 }
-.directions{
+/* .directions{
    border: 2px solid black;
+} */
+.Service-Page h2{
+    text-align: center;
+    margin: 10px;
+    font-size: 28px;
 }
-
 .Service-section{
     padding-top: 10px;
     text-align: center;

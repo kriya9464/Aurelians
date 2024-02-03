@@ -58,8 +58,8 @@ const VendorDash = ({userid}) => {
 
 
   return (
-    <div className=''>
-      <div className="navbar">
+    <div className='Vendor-DashPage'>
+      {/* <div className="navbar">
         <div className="logo">
             <img src="" alt="Aurelians" />
         </div>
@@ -69,7 +69,7 @@ const VendorDash = ({userid}) => {
         </div>
         <div className="person-icon">Profile</div>
         
-      </div>
+      </div> */}
       
 
       <div className="sidebar">
@@ -78,7 +78,7 @@ const VendorDash = ({userid}) => {
             <ul>
                   <li><button >Dashboard</button></li>
                   <li><button >Recent orders</button></li>
-                  <li><button>Customer feedback</button></li>    
+                  <li><button>Feedbacks</button></li>    
             </ul>
         </div>
         <div className="orders list">
@@ -98,7 +98,8 @@ const VendorDash = ({userid}) => {
 
       </div>
 
-      <div className='vendordash'>
+      <div className='vendor-serviceupload'>
+        <h3>Upload New Service and Rate</h3>
       <input type="file" onChange={(e)=>setImg(e.target.files[0])} /> 
         <input type="text" placeholder='price' onChange={(e)=>setText(e.target.value)} />
         <button onClick={handleupload}>Upload</button>

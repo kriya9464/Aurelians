@@ -18,10 +18,10 @@ function Navbar({isAuth}) {
   }
 
   return (
-    <div className='homepage'>
+    <div className='navbar'>
         <div className="nav_bar">
             
-                <img src={logo} alt="logo" height={30} width
+                <img src={logo} alt="logo" height={30} 
                 />
                 <Button><Link to='/'>About us</Link></Button>
                 {isAuth?<Button onClick={handlejoinas}>Profile</Button>:<Button><Link to="/Login">  Login</Link> </Button>}

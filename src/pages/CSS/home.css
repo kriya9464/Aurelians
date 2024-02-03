@@ -3,9 +3,9 @@
     max-width: 100vw;
     
 }
-#navbar{
+/* .navbar{
     display: flex;
-    /* justify-content: right; */
+    justify-content: right;
     background: rgb(115,79,0);
 background: linear-gradient(90deg, rgba(115,79,0,1) 0%, rgba(246,190,48,1) 100%);
 justify-content: space-between;
@@ -22,7 +22,7 @@ justify-content: center;
     justify-content: space-between;
     font-size: 1.2rem;
 
-}
+} */
 .home{
     overflow: hidden;
     display: grid;
@@ -38,6 +38,7 @@ justify-content: center;
     justify-self: center; */
     padding: 20px 10px;
     justify-content: center;
+    text-align: center;
     
 }
 .homeContent h1{
@@ -160,5 +161,5 @@ justify-content: center;
     margin: 0 auto;
     padding: 2px;
     text-align: center;
-
+color: black;
 }

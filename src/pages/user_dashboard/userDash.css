@@ -7,13 +7,13 @@
     justify-content: space-between;
     
 }
-.navbar input{
+/* .navbar input{
     width: 400px;
     height: 30px;
     border-radius: 20px;
     padding: 5px;
     font-size: 14px;
-}
+} */
 .sidebar{
     width: 200px;
     background-color: bisque;

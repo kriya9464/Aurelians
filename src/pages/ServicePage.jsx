@@ -49,7 +49,8 @@ console.log("out",imgUrl)
       {
         (portList.filter((p)=>p.id===postId)).map((post)=>{
           return (
-            <div className="Service-Info">
+            <div className="Service-Page">
+              <div className="Service-Info">
         <div className="about">
           <h1>{post.name}</h1>
           <span className="timing">Timing: 09.00am-08.00pm</span>
@@ -66,11 +67,38 @@ console.log("out",imgUrl)
           <button>Place order</button>
           <button>Book an appointment</button>
         </div>
-        {/* <div className="directions">
-          map aega yahan user ki location se vendor tk direction
-        </div> */}
-        <h1>Our Services and Rates</h1>
+        <div className="directions">
+          {/* map aega yahan user ki location se vendor tk direction */}
+        </div>
+        </div>
+        <h2>Our Services and Rates</h2>
+        <div className="Service-section">
+        
+        <div className="Service-container">
         {
+          imgUrl.map((img)=>{
+            return(             
+      
+          <div className="Service-card">
+            <div className="serviceImage">
+              <img
+                src={img}
+                alt=""
+              />
+            </div>
+            <span>Kurti - 500</span>
+          </div>        
+      
+            )
+          })
+        }
+        </div>
+        <div className="service-samples"></div>
+        {/* <br/> */}
+      </div>
+
+
+        {/* {
           imgUrl.map((img)=>{
             return(
             
@@ -95,17 +123,15 @@ console.log("out",imgUrl)
       
             )
           })
-        }
-      </div>
-      
-      
-        
+        } */}
 
 
-        /* */
+      </div>      
       
           )
-        })
+        }
+        
+        )
       }
       
     </div>

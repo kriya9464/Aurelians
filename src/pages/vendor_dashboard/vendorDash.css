@@ -1,12 +1,29 @@
-.vendordash{
+.Vendor-DashPage{
     display: flex;
-    flex-direction: column;
-    
-    margin-top: -500px;
-    margin-left:500px ;
-    margin-right: 700px;
 }
 
-.vendordash [input]{
-    width:100px;
+
+.vendor-serviceupload{
+    margin: 20px;
+    padding: 20px;
+    border: black 2px solid;
+    border-radius: 20px;
+    display: inline;
+    height: max-content;
+    width: 400px;
+}
+
+.vendor-serviceupload input{
+    padding: 5px;
+    margin: 5px;
+    width:max-content;
+    height: 30px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: black;
+    display: block;
+}
+.vendor-serviceupload Button{
+    background-color: rgba(254, 196, 6, 0.299);
+    margin-top: 10px;
 }

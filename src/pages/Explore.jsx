@@ -37,7 +37,7 @@ const Explore = ({setUserId,setPostId,add,setPostAdd,pincode}) => {
   return (
     <div className='explore'>
       <div className="header">
-        <div className="logo"><img src="" alt="Aurelian" /></div>
+        
         <div className="gender-category">
           <span>Men</span>
           <span>Women</span>
@@ -56,11 +56,13 @@ const Explore = ({setUserId,setPostId,add,setPostAdd,pincode}) => {
             return(
               <div className="info-card" >
           <div className="info-title">
-            <Avatar/><h4>{post.name}</h4>
+            <div className="avatar-icon"><Avatar/><h4>{post.name}</h4></div>
+            
             <div className="info-details">
               <div className="ratings">Ratings<span>{post.status}</span></div>
-            <Button onClick={()=>{setUserId(post.userid);setPostId(post.id)}}><Link to={`/ServicePage/${post.userid}`}>Services</Link></Button><span onClick={()=>{/* handleMap(post.address) */console.log(post.address);setPostAdd(post.address);navigate('/routemap')}}>Directions</span>
-            <span>{post.contact}</span>
+            <div className='info-service'><Button onClick={()=>{setUserId(post.userid);setPostId(post.id)}}><Link to={`/ServicePage/${post.userid}`}>Services</Link></Button>
+            <Button onClick={()=>{/* handleMap(post.address) */console.log(post.address);setPostAdd(post.address);navigate('/routemap')}}>Directions</Button>
+            <br /><span>Contact:  {post.contact}</span></div>
             </div>
           </div>
         </div>
