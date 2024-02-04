@@ -1,3 +1,3 @@
-Aurelians
+Aurelians - Connecting Talent with Livelihood
 
-Reference for google login: https://www.youtube.com/watch?v=75aTZq-qoZk
+The Project Aurelians aim to provide a digital platform to local tailoring vendors to expand their business and reach a broader public. 
