@@ -19,6 +19,16 @@ const firebaseConfig = {
   measurementId: "G-46ZEX0372S"
 };
 
+/* const firebaseConfig = {
+  apiKey: "AIzaSyD6E8kuF-tTek3qqT1DzuqjJ06plrohd5U",
+  authDomain: "aurelians-1b73f.firebaseapp.com",
+  projectId: "aurelians-1b73f",
+  storageBucket: "aurelians-1b73f.appspot.com",
+  messagingSenderId: "745350099760",
+  appId: "1:745350099760:web:05a286cd5825bf7c624ef5",
+  measurementId: "G-LBG6TW09VS"
+}; */
+
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);

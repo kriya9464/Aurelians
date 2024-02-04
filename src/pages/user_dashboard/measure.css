@@ -1,6 +1,8 @@
 .measure-page{
     margin-left: 220px;
     margin-top: 100px;
+    display: flex;
+    flex-direction: row;
 }
 .measure-page h1{
     color: black;
@@ -12,6 +14,7 @@
 }
 .measure-sample{
     width: max-content;
+    margin-top: 100px;
 }
 
 .measure-form{

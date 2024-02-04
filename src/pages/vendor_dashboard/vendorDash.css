@@ -1,3 +1,12 @@
+/* .Vendor-DashPage{
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: -500px;
+    margin-left:500px ;
+    margin-right: 700px;
+} */
+
 .Vendor-DashPage{
     display: flex;
 }
@@ -26,4 +35,17 @@
 .vendor-serviceupload Button{
     background-color: rgba(254, 196, 6, 0.299);
     margin-top: 10px;
+}
+
+.btn{
+    
+    background-color: rgba(254, 196, 6, 0.299);
+    margin-top: 10px;
+    width: 80px;
+    margin-right: 50px;
+}
+
+.outercontainer{
+    display: flex;
+    margin-left:100px;
 }

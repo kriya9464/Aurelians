@@ -22,7 +22,8 @@ function App() {
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
   const [postadd,setPostAdd]=useState("")
   const [pincode,setPincode]=useState("")
-  const [imgUrl,setImgUrl] =useState([])
+  const [tailor,settailor]=useState("")
+  
 
   const [add,setAdd] = useState('')
     // `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`
@@ -35,7 +36,7 @@ function App() {
             fetch(url).then(res=>res.json()).then(data=>{setAdd(data.display_name);setPincode(data.address.postcode)})
         })
     },[])
-    console.log(postadd,"sfsfh")
+    console.log(tailor,"sfsfh")
 
   return (
     <Router>
@@ -46,10 +47,10 @@ function App() {
         <Route path='/' element={<Home />}></Route>
         <Route path='/Login' element={<Login />}></Route>
         <Route path='/Explore' element={<Explore setUserId={setUserId} setPostId={setPostId} add={add} setPostAdd={setPostAdd} pincode={pincode}/>}></Route>
-        <Route path='/userDashboard' element={<UserDash />}></Route>
-        <Route path='/Measurement' element={<Measure />}></Route>
-        <Route path={`/ServicePage/${userid}`} element={<ServicePage userid={userid} postId={postId}/>}></Route>
-        <Route path='/VendorDash' element={<VendorDash postId={postId}/>}></Route>
+        <Route path='/userDashboard' element={<UserDash tailor={tailor}/>}></Route>
+        <Route path='/Measurement' element={<Measure tailor={tailor}/>}></Route>
+        <Route path={`/ServicePage/${userid}`} element={<ServicePage userid={userid} postId={postId} settailor={settailor}/>}></Route>
+        <Route path='/VendorDash' element={<VendorDash userid={userid} tailor={tailor}/>}></Route>
         <Route path='/joinas' element={<JoinAs />}></Route>
         <Route path='/vendor' element={<Vendor />}></Route>
         <Route path='/customer' element={<Customer />}></Route>

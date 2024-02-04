@@ -1,15 +1,26 @@
 import React, { useEffect, useState } from "react";
 import "./CSS/service.css";
-import { db, storage } from "../firebase-config";
+import { auth, db, storage } from "../firebase-config";
 import { getDownloadURL, listAll, ref, uploadBytes } from "firebase/storage";
-import { collection, getDocs } from "firebase/firestore";
-const ServicePage = ({userid,postId}) => {
+import { addDoc, collection, getDocs } from "firebase/firestore";
+import Modal from 'react-responsive-modal';
+import { Close} from '@mui/icons-material';
+import 'react-responsive-modal/styles.css';
+import { Avatar } from "@mui/material";
+import { useNavigate } from "react-router-dom";
+
+
+const ServicePage = ({userid,postId,settailor}) => {
   const [portList,setPortList]=useState([])
   const [imgUrl,setImgUrl] =useState([])
   const portCollectionRef=collection(db,'vendor-detail')
   const pCollectionRef=collection(db,'price-detail')
   const [price,setPrice]=useState([])
-  
+  const[isModalOpen, setisModalOpen] = useState(false);
+  const close=(<Close />)
+  const [imgurl, setimgUrl]=useState((""));
+const [question, setQuestion] = useState("");
+let navigate = useNavigate();
 
   useEffect(()=>{
     listAll(ref(storage,`${userid}`)).then(imgs=>{
@@ -42,6 +53,19 @@ const ServicePage = ({userid,postId}) => {
     setImgUrl(uniqueItems)
 
 },[])
+const SelfCollectionRef = collection(db, "self-delivery-detail")
+const handleDelivery=(id)=>{
+  //console.log("tailorid",id)
+  //settailor(id)
+  localStorage.setItem("vendorid", id);
+  navigate('/userDashboard')
+}
+
+const handleSelfDelivery=async(userid)=>{
+  await addDoc(SelfCollectionRef, {userid,name:auth.currentUser.displayName,service:"self-service",orderid:auth.currentUser.uid})
+  setisModalOpen(false)
+}
+
 
 console.log("out",imgUrl)
   return (
@@ -49,8 +73,7 @@ console.log("out",imgUrl)
       {
         (portList.filter((p)=>p.id===postId)).map((post)=>{
           return (
-            <div className="Service-Page">
-              <div className="Service-Info">
+            <div className="Service-Info">
         <div className="about">
           <h1>{post.name}</h1>
           <span className="timing">Timing: 09.00am-08.00pm</span>
@@ -64,41 +87,52 @@ console.log("out",imgUrl)
             and women.
           </p>
 
-          <button>Place order</button>
+          <button onClick={()=>setisModalOpen(true)}>Place order</button>
+
+
+
+          <Modal
+        open = {isModalOpen}
+        closeIcon = {close}
+        onClose = {()=> setisModalOpen(false)}
+        closeOnEsc
+        centercloseOnOverlayClick={false}
+        styles={{
+          overlay: {
+            height:"auto",
+          },
+          backgroundColor:"yellow"
+        }}
+        >
+          
+          <div className="modal_btn">
+            <button className='cancel' onClick={()=>{handleSelfDelivery(post.userid)}}>
+              Self-Service
+            </button>
+            <button onClick={()=>{handleDelivery(post.userid)}}type='submit' className='add'>
+              Pickup and Delivery Service
+            </button>
+          </div>
+        </Modal>
+
+
+
+
           <button>Book an appointment</button>
         </div>
-        <div className="directions">
-          {/* map aega yahan user ki location se vendor tk direction */}
-        </div>
-        </div>
+        {/* <div className="directions">
+          map aega yahan user ki location se vendor tk direction
+        </div> */}
+        {/* <div className="ourservices"> */}
+        {/* <h1>Our Services and Rates</h1> */}
+        {/* </div> */}
         <h2>Our Services and Rates</h2>
         <div className="Service-section">
         
         <div className="Service-container">
+
+        
         {
-          imgUrl.map((img)=>{
-            return(             
-      
-          <div className="Service-card">
-            <div className="serviceImage">
-              <img
-                src={img}
-                alt=""
-              />
-            </div>
-            <span>Kurti - 500</span>
-          </div>        
-      
-            )
-          })
-        }
-        </div>
-        <div className="service-samples"></div>
-        {/* <br/> */}
-      </div>
-
-
-        {/* {
           imgUrl.map((img)=>{
             return(
             
@@ -121,17 +155,23 @@ console.log("out",imgUrl)
         <br/>
       </div> 
       
+
+      
             )
           })
-        } */}
+        }
+        </div>
+        </div>
+      </div>
+      
+      
+        
 
 
-      </div>      
+        /* */
       
           )
-        }
-        
-        )
+        })
       }
       
     </div>
