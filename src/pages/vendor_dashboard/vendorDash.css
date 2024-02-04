@@ -34,18 +34,44 @@
 }
 .vendor-serviceupload Button{
     background-color: rgba(254, 196, 6, 0.299);
+    background-color: #FAA307;
     margin-top: 10px;
+    color: black;
 }
 
 .btn{
     
-    background-color: rgba(254, 196, 6, 0.299);
+    /*background-color: #FAA307; */
     margin-top: 10px;
     width: 80px;
     margin-right: 50px;
+    color: black;
 }
-
+.accept Button{
+    background-color: green;
+    color: white;
+}
+.decline Button{
+    background-color: red;
+    color: white;
+}
 .outercontainer{
     display: flex;
     margin-left:100px;
+}
+.btn:hover{
+    color: black;
+    background-color: #FAA307;
+}
+.modal_btn{
+    margin: 5px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    
+
+}
+.modal_btn span{
+    display: inline;
+    text-align: left;
 }

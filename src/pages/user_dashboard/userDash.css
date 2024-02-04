@@ -1,3 +1,6 @@
+/* .user-dashpage{
+  display: flex;
+} */
 .navbar{
     display: flex;
     flex-direction: row;
@@ -17,8 +20,10 @@
 .sidebar{
     width: 200px;
     background-color: bisque;
+    background-color: #F48C06;
     border-right: black solid 4px;
     min-height: 100vh;
+    height: max-content;
   padding-top: 10px;
     display: flex;
     flex-direction: column;

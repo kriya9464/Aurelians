@@ -178,14 +178,28 @@ const VendorDash = ({userid,tailor}) => {
                  
                   <div className="recentorder">
           <div className="modal_btn">
-          <p style={{color:"black"}}>bust:{post.bust}{", "}waist:{post.waist}{', '}upperwaist:{post.upperwaist}{', '}neck:{post.neck}{', '}upperhip:{post.upperhip}{', '}shoulder:{post.shoulder}{', '}arm:{post.arm}{', '}wrist:{post.wrist}{', '}frontbodice:{post.frontbodice}{', '}backbodice:{post.backbodice}{', '}hiptoknee:{post.hiptoknee}{', '}inseam:{post.inseam}{', '}hiptoankle:{post.hiptoankle}</p>
+          {/* <p style={{color:"black"}}> */}
+            <span>bust: {post.bust}</span>
+            <span>waist: {post.waist}</span>
+            <span>upperwaist: {post.upperwaist}</span>
+            <span> neck:{post.neck}</span>
+            <span> upperhip:{post.upperhip}</span>
+            <span> shoulder:{post.shoulder}</span>
+            <span> arm:{post.arm}</span>
+            <span> wrist:{post.wrist}</span>
+            <span> frontbodice:{post.frontbodice}</span>
+            <span> backbodice:{post.backbodice}</span>
+            <span> hiptoknee:{post.hiptoknee}</span>
+            <span> inseam:{post.inseam}</span>
+            <span> hiptoankle:{post.hiptoankle}</span>
+            {/* </p> */}
           </div>
 
           <div className="outercontainer">
-          <div className="btn">
+          <div className="accept btn">
                     <Button>accept</Button>
                     </div>
-                    <div className="btn">
+                    <div className="decline btn">
                     <Button>decline</Button>
                     </div>
                     

@@ -49,8 +49,8 @@ const handleSave=async()=>{
   return (
     <div className='measure-page'>
       <div>
-      <h1>Fill in your Measurements</h1>
-      
+      <h1>Fill in your Measurements</h1><span>(in cms)</span>
+      <div className="measureForm">
       <form action="" className='measure-form'>
         <label htmlFor="">Bust</label><input type="text" value={bust} onChange={(e)=>setBust(e.target.value)}/>
         <label htmlFor="">Waist</label><input type="text" value={waist} onChange={(e)=>setWaist(e.target.value)}/>
@@ -65,8 +65,11 @@ const handleSave=async()=>{
         <label htmlFor="">Hip to Knee</label><input type="text" value={hiptoknee} onChange={(e)=>setHipToKnee(e.target.value)}/>
         <label htmlFor="">Inseam</label><input type="text" value={inseam} onChange={(e)=>setInseam(e.target.value)}/>
         <label htmlFor="">Hip to Ankle</label><input type="text" value={hiptoankle} onChange={(e)=>setHipToAnkle(e.target.value)}/>
+        <div>{/*empty rhne dena*/}</div>
         <Button onClick={handleSave}>Save</Button>
       </form>
+       
+      </div>
       </div>
       <div className="measure-sample">
         <img src="https://thefoldline.com/wp-content/uploads/2018/12/Body-measurement-chart-full-5.png" alt="" />

@@ -56,16 +56,17 @@
     grid-template-columns: repeat(3,1fr);
 }
 .serviceImage img{
-    width: 300px;
+    width: 280px;
+    height: 300px;
     border-radius: 20px;
-    margin: 50px;
+    margin: 10px 50px;
 }
 .Service-card span{
     font-size: 24px;
     font-weight: 500;
-    background-color: rgba(222, 184, 135, 0.614);
+    background-color: rgba(247, 152, 29, 0.614);
     color: rgb(15, 15, 15);
-    margin:20px ;
+    margin:10px ;
 
 }
 
@@ -81,5 +82,4 @@
 
 .ourservices{
     margin-top:300px;
-    
 }

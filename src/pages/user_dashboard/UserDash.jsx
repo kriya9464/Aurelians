@@ -25,7 +25,7 @@ const UserDash = ({tailor}) => {
 
   const [modal,setModal]=useState(false)
   return (
-    <div>
+    <div className='user-dashpage'>
       {/* <div className="navbar">
         <div className="logo">
             <img src="" alt="Aurelians" />

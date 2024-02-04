@@ -5,7 +5,7 @@ import './pages/CSS/home.css'
 import { Button } from '@mui/material'
 import './navbar.css'
 import { useNavigate } from "react-router-dom";
-
+import { Avatar } from '@mui/material';
 function Navbar({isAuth}) {
   let navigate = useNavigate();
   const joinas=localStorage.getItem("joinas") 
@@ -24,7 +24,7 @@ function Navbar({isAuth}) {
                 <img src={logo} alt="logo" height={30} 
                 />
                 <Button><Link to='/'>About us</Link></Button>
-                {isAuth?<Button onClick={handlejoinas}>Profile</Button>:<Button><Link to="/Login">  Login</Link> </Button>}
+                {isAuth?<Button onClick={handlejoinas}>Profile</Button>:<Button><Link to="/Login"> <Avatar/></Link> </Button>}
                 
         
         </div>

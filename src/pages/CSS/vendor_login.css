@@ -1,0 +1,43 @@
+.vendor-login{
+    /* text-align: center; */
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #faa507a0;
+    width: max-content;
+    color: #370617;
+    border-radius: 10px;
+}
+.vendor-login form{
+    display: grid;
+     gap: 5px;
+}
+.details{
+    margin: 2px;
+    font-size: 18px;
+    justify-self: left;
+    text-align: left;
+    height: 30px;
+    width: 400px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.details input,select{
+    height: 30px;
+    color: black;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 5px;
+}
+.vendor-login Button{
+    background-color: #370617;
+    width: 100px;
+    margin: 20px auto;
+    color: #FFBA08;
+    font-size: 18px;
+}
+.vendor-login Button:hover{
+    background-color: green;
+    color: white;
+}

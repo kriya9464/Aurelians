@@ -1,0 +1,19 @@
+.joinAs{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 100px;
+    height: max-content;
+    width: max-content;
+    background-color: #FAA307;
+    border-radius: 20px;
+    padding: 10px;
+}
+.joinAs h2{
+    color: white;
+}
+.joinAs Button{
+    color: #6A040F;
+    margin: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}

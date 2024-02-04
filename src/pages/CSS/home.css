@@ -43,6 +43,8 @@ justify-content: center;
 }
 .homeContent h1{
     color: rgb(190, 121, 16);
+    color: #6A040F;
+
 }
 
 .mainText{ 
@@ -55,6 +57,7 @@ justify-content: center;
     text-align:center;
     text-transform: uppercase;
     color: #155102; 
+    color: #FFBA08;
     font-size: 4rem;
   }
   
@@ -69,6 +72,7 @@ justify-content: center;
     align-items: center;
     
     color: #1D3557;
+    color: #FFBA08;
   }
   
   
@@ -149,7 +153,8 @@ justify-content: center;
     margin-top: 50px;
     height: 100px;
     width: 250px;
-    background-color: rgba(181, 133, 20, 0.466);
+    /* background-color: rgba(181, 133, 20, 0.466); */
+    background-color: #FAA307;
     border: 2px solid black;
     border-radius: 20px;
     justify-items: center;

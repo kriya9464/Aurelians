@@ -1,11 +1,11 @@
 .measure-page{
     margin-left: 220px;
-    margin-top: 100px;
+    margin-top: 200px;
     display: flex;
     flex-direction: row;
 }
 .measure-page h1{
-    color: black;
+    color: #03071E;
     padding: 10px;
 }
 .measure-sample img{
@@ -22,13 +22,28 @@
     width: 500px;
     margin: 5px;
     padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
 }
 .measure-form label{
     font-size: 16px;
+    font-weight: 600;
     margin: 10px;
     padding: 2px;
 }
 .measure-form input{
     height: 30px;
     margin: 10px auto;
+}
+.measureForm Button{
+    background-color: blue;
+    color: white;
+    height:40px;
+    width: 80px;
+    display: block;
+    
+    font-size: 16px;
+}
+.measureForm Button:hover{
+    color: #03071E;
 }

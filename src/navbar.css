@@ -1,9 +1,11 @@
 .navbar{
     padding-left: 10px;
     padding-right: 10px;
-    background: rgb(115,79,0);
-    background: linear-gradient(90deg, rgba(115,79,0,1) 0%, rgba(246,190,48,1) 100%);
-    
+    background: rgb(160, 109, 0);
+    background: linear-gradient(90deg, rgb(157, 107, 0) 0%, rgba(246,190,48,1) 100%);
+    background: #f48c06;
+    background: linear-gradient(90deg, #faa307 0%, #ffba08 100%);
+  
 }
 .nav_bar{
     display: flex;
