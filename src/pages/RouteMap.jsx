@@ -29,7 +29,7 @@ function RouteMap({postadd,add}) {
     console.log(postadd,add)
 
     const { isLoaded } = useJsApiLoader({
-        googleMapsApiKey:"AIzaSyBuOt3CU_vFir6ukVZcHvmOSGDFDNkRxeY",
+        googleMapsApiKey:"place google map api",
         libraries: ['places'],
       })
     
